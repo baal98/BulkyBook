@@ -38,7 +38,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Company obj, IFormFile? file)
+        public IActionResult Upsert(Company obj, IFormFile file)
         {
             if (ModelState.IsValid)
             {

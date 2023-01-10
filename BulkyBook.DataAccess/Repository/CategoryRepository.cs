@@ -20,13 +20,14 @@ namespace BulkyBook.DataAccess.Repository
 
         public void Update(Category category)
         {
-            var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
-            if (objFromDb != null)
-            {
-                objFromDb.Name = category.Name;
-                objFromDb.DisplayOrder = category.DisplayOrder;
+            _db.Categories.Update(category);
+            //var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
+            //if (objFromDb != null)
+            //{
+            //    objFromDb.Name = category.Name;
+            //    objFromDb.DisplayOrder = category.DisplayOrder;
 
-            }
+            //}
         }
     }
 }
