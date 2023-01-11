@@ -59,7 +59,5 @@ namespace BulkyBook.Models
 
         [Required]
         public string Name { get; set; }
-        public string PickupName { get; set; }
-        public DateTime PickupTime { get; set; }
     }
 }
