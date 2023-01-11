@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using Microsoft.Build.Framework;
 
 namespace BulkyBook.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        [Required]
+        [System.ComponentModel.DataAnnotations.Required]
         public string Name { get; set; }
         public string StreetAddress { get; set; }
         public string City { get; set; }
